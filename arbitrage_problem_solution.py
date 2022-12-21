@@ -66,10 +66,10 @@ def main ():
     # test examples, currency rates table, rates [i][j] = rates of currency [i]/currency [j], e.g. rate [0][3] = 135 as 1 USD = 135 JPY
             # USD, EU, LB, JPY 
     rates = [
-             [1,0.99, 0.83, 135],            
-             [1.01,1,0.85,137], 
-             [1.2,1.18,1,162],
-             [0.0074,0.0073,0.0062,1]
+             [1,0.989, 0.829, 134],            
+             [1.011,1,0.848,136], 
+             [1.201,1.179,1,163],
+             [0.0073,0.0072,0.0061,1]
             ]    
     
     source, source_value = 0, rates[0][0]
