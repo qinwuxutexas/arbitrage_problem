@@ -1,4 +1,4 @@
-# a class for arbitrage - find max money value through currancy exchange chain
+# a class for arbitrage - find max money value through currancy exchange chain (e.g., USD -> EU -> JPY -> USD, starts and ends at the same currency)
 # It uses the Dijkstra’s algorithm to find the money exchange path, wich is faster than the Bellmon-Ford algorithm
 
 # author: Q. Xu, Date: 12/03/2022, Version: 0.0
@@ -16,7 +16,7 @@ import collections
 from typing import List
 from heapq import *
 
-class arbitrage_solution_1:
+class arbitrage_solution:
     def __init__ (self, rates: List[List[float]]):
         self.rates = rates
         self.graph = collections.defaultdict (list)
@@ -83,7 +83,7 @@ def main ():
     
     source, source_value = 0, rates[0][0]
     option = 1 # 1: return as long as find a path to get value greater than source; 2: find and return the maximum value among all potential paths                                   
-    c_arbitrage =arbitrage_solution_1 (rates)
+    c_arbitrage =arbitrage_solution (rates)
     max_value_paths = c_arbitrage.dijisktra (source, source_value, option)
     c_arbitrage.print_max_value_path (max_value_paths)
     
