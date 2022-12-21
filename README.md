@@ -1,6 +1,6 @@
 
 A program for arbitrage - find max money value through currancy exchange chain (e.g., USD-> JPY -> EU -> USD).
-It uses the Dijkstra’s algorithm to find the money exchange path for each currency with the maximum money value. It is faster than the Bellmon-Ford algorithm.
+It uses the Dijkstra’s algorithm to find the optimal money exchange path for each currency with the maximum money value.
 
 Author: Q. Xu 
 Date: 12/03/2022 
